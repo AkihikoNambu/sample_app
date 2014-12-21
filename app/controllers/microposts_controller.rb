@@ -13,7 +13,9 @@ class MicropostsController < ApplicationController
   end
 
   def destroy
-  	@micropost.destroy
+    # if @micropost.present?
+    	@micropost.destroy
+    # end
     redirect_to root_url
   end
 
